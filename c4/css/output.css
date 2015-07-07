@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0; }
+  body header {
+    text-align: center;
+    padding: 50 0px; }
+
+.container {
+  width: 800px;
+  margin: 0 auto; }
+
+.piece-space {
+  height: 50px;
+  border: 1px solid black; }
+
+.board {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 800px;
+  height: 580px; }
+  .board tr {
+    height: 2px;
+    border: 1px solid black; }
+  .board td {
+    border: 1px solid black; }
+
+/*# sourceMappingURL=output.css.map */
