@@ -10,8 +10,6 @@ body {
 .container{
   width: 800px;
   margin: 0 auto;
-  // border: 1px solid black;
-
 }
 
 .piece-space {
@@ -21,7 +19,6 @@ body {
   margin: 0 auto;
   td{
     width: 111px;
-    // border: 1px solid black;
   }
 }
 
@@ -36,20 +33,23 @@ body {
 .top:hover{
   opacity: 0.25;
 }
+// 5px 20px 5px
 
 .board{
   margin: 0 auto;
   border: 1px solid black;
   width: 80%;
+  // border-radius: 50%;
   tr{
-    // width: 20px;
     height: 2px;
     border: 1px solid black;
+    // border-radius: 50%;
   }
   td{
     border: 1px solid black;
     width: 90px;
     height: 70px;
+    // border-radius: 50%;
   }
 }
 
