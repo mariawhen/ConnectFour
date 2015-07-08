@@ -1,5 +1,11 @@
-console.log('activate framework!');
+////////////////////////////////////
+//    NOT CONNECTED TO INDEX.
+//    SAME JS CODE WITH COMMENTS
+////////////////////////////////////
 
+
+console.log('activate framework!');
+//shit ton of arrays
 var col0 = [null, null, null, null, null, null];
 var col1 = [null, null, null, null, null, null];
 var col2 = [null, null, null, null, null, null];
@@ -7,11 +13,13 @@ var col3 = [null, null, null, null, null, null];
 var col4 = [null, null, null, null, null, null];
 var col5 = [null, null, null, null, null, null];
 var col6 = [null, null, null, null, null, null];
-
+//array that holds the shit ton arrays
 var board = [col0, col1, col2, col3, col4, col5, col6];
 
+//If 0, red's turn. If 1, black's turn
 var turn = 0;
 
+//used in changeColor func to point event listener to the top row cells only
 var squares = document.getElementsByClassName("top");
 
 
@@ -29,17 +37,22 @@ var addPiece = function(columnClicked) {
   }
 };
 
+//changes color of cells according to turn
 var changeColor = function(column, row) {
-
+  //takes coordinates from array and makes into string.
   var id = row.toString() + "-" + column.toString();
+  // console.log(id);
   console.log(document.getElementById(id));
   if (turn === 1) {
+                                          //this is player one, DARK BLUE, 1
     document.getElementById(id).style.backgroundColor = '#355873';
   } else {
+                                          //this is player two, LIGHTBlUE, 0
     document.getElementById(id).style.backgroundColor = '#7E95A6';
   }
 };
 
+//listens for clicks and assigns turns, calls get winner func after turn happens
 for (var i = 0; i < squares.length; i++) {
   squares[i].addEventListener('click', function() {
     var columnClicked = this.id;
@@ -53,20 +66,17 @@ for (var i = 0; i < squares.length; i++) {
 
   })
 }
+//checks for vertical wins of player TWO (0) only
 var getWinner = function(board) {
   for (var i = 0; i < board.length; i++) {
     if (board[i].join('').indexOf('0000') > -1) {
       console.log("zero wins");
-      declareWinner();
     }
   }
-};
+}
 
-var declareWinner = function (){
-  alert("Player 2 WINS!");
-};
 
-// labels coordinates on board
+//labels some of the coordinates of the cells in accordance to both array and cells
 function labelMyShit() {
     for (var i = 0; i < board.length; i++) {
       for (var j = 0; j < board[i].length; j++) {
