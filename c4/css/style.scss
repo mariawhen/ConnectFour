@@ -10,18 +10,37 @@ body {
 .container{
   width: 800px;
   margin: 0 auto;
+  // border: 1px solid black;
+
 }
 
 .piece-space {
-  height: 50px;
+  width: 80%;
+  height: 70px;
   border: 1px solid black;
+  margin: 0 auto;
+  td{
+    width: 111px;
+    // border: 1px solid black;
+  }
+}
+
+.top {
+  background: url("../img/arrow.png");
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.0;
+}
+
+.top:hover{
+  opacity: 0.25;
 }
 
 .board{
   margin: 0 auto;
   border: 1px solid black;
-  width: 800px;
-  height: 580px;
+  width: 80%;
   tr{
     // width: 20px;
     height: 2px;
@@ -29,5 +48,11 @@ body {
   }
   td{
     border: 1px solid black;
+    width: 90px;
+    height: 70px;
   }
 }
+
+// #row1 .col2{
+//   background-color: blue;
+// }
