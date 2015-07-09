@@ -71,10 +71,21 @@ var getWinner = function(board) {
   for (var i = 0; i < board.length; i++) {
     if (board[i].join('').indexOf('0000') > -1) {
       console.log("zero wins");
+    alert("Player 2 WINS!")
+    clearTheBoard();
     }
   }
-}
+};
 
+var clearTheBoard = function() {
+  for (var i = 0; i < board.length; i++) {
+    for (var j = 0; j < ; j++) {
+      board[i][j] = null;
+    }
+  }
+  turn = 0; // reset to first player!
+  return true;
+};
 
 //labels some of the coordinates of the cells in accordance to both array and cells
 function labelMyShit() {
