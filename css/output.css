@@ -1,23 +1,42 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - css/style.scss
+body {
+  padding: 0;
+  margin: 0; }
+  body header {
+    text-align: center;
+    padding: 50 0px; }
 
-Backtrace:
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:482:in `read'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:293:in `watch'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin.rb:108:in `method_missing'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/sass_scss.rb:384:in `watch_or_update'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/base.rb:52:in `parse'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/base.rb:19:in `parse!'
-/Users/mariawhen/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.15/bin/sass:13:in `<top (required)>'
-/Users/mariawhen/.rbenv/versions/2.2.0/bin/sass:23:in `load'
-/Users/mariawhen/.rbenv/versions/2.2.0/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - css/style.scss"; }
+.container {
+  width: 800px;
+  margin: 0 auto; }
+
+.piece-space {
+  width: 80%;
+  height: 70px;
+  border: 1px solid black;
+  margin: 0 auto; }
+  .piece-space td {
+    width: 111px; }
+
+.top {
+  background: url("../img/arrow.png");
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.0; }
+
+.top:hover {
+  opacity: 0.25; }
+
+table.board {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 80%;
+  border-collapse: separate; }
+  table.board tr {
+    height: 2px;
+    border: 1px solid black; }
+  table.board td {
+    width: 90px;
+    height: 70px; }
+
+/*# sourceMappingURL=output.css.map */
